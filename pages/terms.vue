@@ -1,4 +1,14 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+useHead({
+  title: `Trend Dad, Terms`,
+  meta: [
+    {
+      name: "description",
+      content: `Terms`,
+    },
+  ],
+});
+</script>
 
 <template>
   <div class="max-w-3xl mx-auto p-8 bg-white shadow-md rounded-lg mt-10">

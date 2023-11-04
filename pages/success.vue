@@ -10,6 +10,16 @@ onMounted(() => {
     navigateTo("/");
   }, 4000);
 });
+
+useHead({
+  title: `Trend Dad, Success`,
+  meta: [
+    {
+      name: "description",
+      content: `Success payment`,
+    },
+  ],
+});
 </script>
 
 <template>

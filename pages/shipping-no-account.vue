@@ -70,6 +70,16 @@ const createUser = async () => {
 
   isLoading.value = false;
 };
+
+useHead({
+  title: `Trend Dad, Shipping`,
+  meta: [
+    {
+      name: "description",
+      content: `Shipping no-account`,
+    },
+  ],
+});
 </script>
 <template>
   <form

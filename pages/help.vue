@@ -1,4 +1,14 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+useHead({
+  title: `Trend Dad, FAQ`,
+  meta: [
+    {
+      name: "description",
+      content: `FAQ page `,
+    },
+  ],
+});
+</script>
 
 <template>
   <div class="w-4/6 mx-auto h-screen mt-10">

@@ -110,6 +110,16 @@ const createUser = async () => {
   await createPaymentGeneratedContent();
 
   isLoading.value = false;
+
+  useHead({
+    title: `Trend Dad, Shipping`,
+    meta: [
+      {
+        name: "description",
+        content: `Shipping`,
+      },
+    ],
+  });
 };
 </script>
 <template>

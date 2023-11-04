@@ -10,7 +10,7 @@ useHead({
   meta: [
     {
       name: "description",
-      content: `The ${params.name} collection of Trend Dad, buy trending tiktok products and stay trending.`,
+      content: `The ${params.name} collection of Trend Dad, buy stashing pieces and secure wealth`,
     },
   ],
 });

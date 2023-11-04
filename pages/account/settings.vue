@@ -3,12 +3,11 @@ const { data } = useAuth();
 const user = data.value?.user;
 
 useHead({
-  title: "Trend Dad, settings page",
+  title: "Trend Dad, Settings page",
   meta: [
     {
       name: "description",
-      content:
-        "This is the settings page, get the latest trends with your trend dad, buy products and stay trending. We sell products that are trending on tiktok and other social media platforms.",
+      content: "Settings page, update your account.",
     },
   ],
 });

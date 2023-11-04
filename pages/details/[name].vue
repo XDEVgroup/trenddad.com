@@ -8,7 +8,7 @@ useHead({
   meta: [
     {
       name: "description",
-      content: `Get ${params.name} with trend dad, buy trending tiktok products and stay trending.`,
+      content: `Hide gold, money, or watches inside the ${params.name}, stash items directly with our products  `,
     },
   ],
 });

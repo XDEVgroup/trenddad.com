@@ -7,8 +7,7 @@ useHead({
   meta: [
     {
       name: "description",
-      content:
-        "This is the account page, get the latest trends with your trend dad, buy products and stay trending. We sell products that are trending on tiktok and other social media platforms.",
+      content: "Account page, check your account.",
     },
   ],
 });

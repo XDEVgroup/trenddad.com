@@ -34,6 +34,16 @@ const removeCartItem = async (index: number) => {
   total.value = allPrices?.reduce((a: any, b: any) => a + b, 0);
   totalToPay.value = total.value! + totalShippingCosts.value;
 };
+
+useHead({
+  title: `Trend Dad, Cart`,
+  meta: [
+    {
+      name: "description",
+      content: `Cart page, continue to fulfill your payment. `,
+    },
+  ],
+});
 </script>
 
 <template>
@@ -85,7 +95,7 @@ const removeCartItem = async (index: number) => {
                   />
                 </div>
                 <div class="mt-2">
-                  <span class="">Ordered today, delivered tomorrow.</span>
+                  <span class="">Order today, delivered within 2-5 days</span>
                 </div>
               </div>
             </div>

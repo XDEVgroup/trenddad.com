@@ -9,7 +9,7 @@ useHead({
     {
       name: "description",
       content:
-        "Get the latest trends with your trend dad, buy products and stay trending. We sell products that are trending on tiktok and other social media platforms.",
+        "Get the latest stash items with trend dad, buy products and stay trending. We sell products that are trending on tiktok. Hide valuable items directly.",
     },
   ],
 });

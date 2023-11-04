@@ -15,6 +15,16 @@ const { data, error, refresh } = await useAsyncData("getProducts", () =>
   })
 );
 const products = data.value?.data;
+
+useHead({
+  title: `Trend Dad, Trending stash products `,
+  meta: [
+    {
+      name: "description",
+      content: `Trending stash products to hide cash or expensive items.`,
+    },
+  ],
+});
 </script>
 
 <template>

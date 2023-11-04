@@ -44,6 +44,16 @@ const handleSigninCredentials = async () => {
 if (status.value === "authenticated") {
   navigateTo("/account");
 }
+
+useHead({
+  title: `Trend Dad, Sign in`,
+  meta: [
+    {
+      name: "description",
+      content: `Sign in`,
+    },
+  ],
+});
 </script>
 
 <template>

@@ -18,6 +18,16 @@ const { data, error, refresh } = await useAsyncData("getProducts", () =>
   })
 );
 const products = data.value?.data;
+
+useHead({
+  title: `${blogs.blog.title} `,
+  meta: [
+    {
+      name: "description",
+      content: `${blogs.blog.intro} `,
+    },
+  ],
+});
 </script>
 
 <template>

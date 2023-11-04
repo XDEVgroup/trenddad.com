@@ -1,4 +1,14 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+useHead({
+  title: `Trend Dad Privacy Policy`,
+  meta: [
+    {
+      name: "description",
+      content: `Privacy Policy`,
+    },
+  ],
+});
+</script>
 
 <template>
   <div class="max-w-3xl mx-auto p-8 bg-white shadow-md rounded-lg mt-10">

@@ -43,6 +43,16 @@ const handleConfirmEmail = async () => {
     navigateTo("/sign-in");
   }, 2000);
 };
+
+useHead({
+  title: `Reset Password`,
+  meta: [
+    {
+      name: "description",
+      content: `Reset your password`,
+    },
+  ],
+});
 </script>
 
 <template>
