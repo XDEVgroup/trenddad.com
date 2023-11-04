@@ -5,7 +5,12 @@ export default defineNuxtConfig({
     "@sidebase/nuxt-auth",
     "@pinia/nuxt",
     "@nuxt/image",
+    'nuxt-gtag'
   ],
+  // @ts-ignore
+  gtag: {
+    id: 'G-DVE33Y4MZD'
+  },
   routeRules: {
    "/cart": {ssr: false},
    "/shipping": {ssr: false}
