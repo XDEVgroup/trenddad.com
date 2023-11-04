@@ -20,13 +20,8 @@ defineProps<Props>();
           :src="image"
           alt=""
         />
+
         <span
-          v-if="name === 'cars'"
-          class="absolute md:bottom-6 right-6 bottom-2 font-melodrama md:group-hover:scale-110 md:transition md:duration-400 uppercase text-white font-bold text-2xl z-10"
-          >{{ name }}</span
-        >
-        <span
-          v-else
           class="absolute md:bottom-6 right-6 bottom-2 font-melodrama md:group-hover:scale-110 md:transition md:duration-400 uppercase text-black font-bold text-2xl z-10"
           >{{ name }}</span
         >

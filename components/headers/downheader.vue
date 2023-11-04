@@ -33,12 +33,6 @@ const { data, signOut } = useAuth();
           class="block text-black hover:text-white hover:bg-black decoration-none px-1 py-2 cursor-pointer"
           >home</NuxtLink
         >
-        <NuxtLink
-          @click="isOpenCollections = false"
-          href="/collections/cars"
-          class="block text-black hover:text-white hover:bg-black decoration-none px-1 py-2 cursor-pointer"
-          >cars</NuxtLink
-        >
       </div>
 
       <div>

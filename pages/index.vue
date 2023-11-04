@@ -72,12 +72,6 @@ const products = data.value?.data;
         </div>
       </div>
     </div>
-    <!-- <div class="flex flex-col items-center">
-      <div class="grid md:grid-cols-2 grid-cols-1 mt-0.5 md:gap-6 md:mt-6">
-        <collection-block name="home" image="/collectionimages/home.webp" />
-        <collection-block name="cars" image="/collectionimages/cars.webp" />
-      </div>
-    </div> -->
     <div id="products" class="flex flex-col items-center md:mt-6 mt-0 px-4">
       <div
         class="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6"
