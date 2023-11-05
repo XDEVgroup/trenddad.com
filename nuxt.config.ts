@@ -12,10 +12,12 @@ export default defineNuxtConfig({
     id: 'G-DVE33Y4MZD'
   },
   routeRules: {
+
     "/": {isr: true},
     "/trending": {isr: true},
-   "/cart": {ssr: false},
-   "/shipping": {ssr: false}
+    "/details/**": {isr: true},
+   "/cart": {ssr: false, cache: false},
+   "/shipping": {ssr: false, cache: false},
   },
   components: {
     dirs: ["~/components"],
