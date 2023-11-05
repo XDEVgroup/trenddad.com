@@ -1,8 +1,6 @@
 <script lang="ts" setup>
 import { useCartStore } from "../../stores/cart-store";
 const store = useCartStore();
-const { data } = useAuth();
-const user = data.value?.user;
 const openPopup = ref(false);
 const email = ref("");
 const isLoading = ref(false);
@@ -112,12 +110,6 @@ const sendReference = async () => {
         <div class="md:flex items-center space-x-2 hidden">
           <NuxtLink href="/help"
             ><div class="i-mdi-help-circle-outline text-2xl text-black"
-          /></NuxtLink>
-          <NuxtLink v-if="user" href="/account"
-            ><div class="i-mdi-account-outline text-2xl text-black"
-          /></NuxtLink>
-          <NuxtLink v-else href="/sign-in"
-            ><div class="i-mdi-account-outline text-2xl text-black"
           /></NuxtLink>
           <!-- <div class="i-mdi-cards-heart-outline text-2xl text-black" /> -->
           <NuxtLink href="/terms"

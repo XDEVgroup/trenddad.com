@@ -10,7 +10,7 @@ if (cartItems.value.length === 0) {
 }
 const isLoading = ref(false);
 
-const isAccount = ref(true);
+const isAccount = ref(false);
 
 const choosePaymentAccountOption = () => {
   isLoading.value = true;
@@ -35,8 +35,7 @@ const choosePaymentAccountOption = () => {
     >
     <div class="md:w-3/12 w-5/6 mt-20 flex flex-col">
       <select v-model="isAccount">
-        <option :value="true">I want to proceed by account Sign-in</option>
-        <option :value="false">Continue without account</option>
+        <option :value="false">Continue without account (Only option)</option>
       </select>
       <button
         :disabled="isLoading"
