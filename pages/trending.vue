@@ -34,8 +34,8 @@ useHead({
 
       <nuxt-img
         :height="500"
-        src="/collection.webp"
-        alt="dalle"
+        src="/image4.png"
+        alt="image"
         class="object-cover object-center absolute h-80 z-10 w-screen bg-gradient-to-t from-white to-transparent"
       />
       <div

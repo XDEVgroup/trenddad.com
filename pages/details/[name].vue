@@ -44,10 +44,7 @@ const chosenImage = ref(
     >
       <div class="">
         <div class="mb-6">
-          <div class="flex gap-1">
-            <span>Collection: </span><span>{{ data?.data?.collection }}</span>
-          </div>
-          <span class="mt-1 text-4xl">{{ data?.data?.name }}</span>
+          <h1 class="mt-1 text-4xl">{{ data?.data?.name }}</h1>
         </div>
         <div class="">
           <nuxt-img

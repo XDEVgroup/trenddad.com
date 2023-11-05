@@ -74,7 +74,6 @@ useHead({
                 />
               </div>
               <div class="flex flex-col py-8">
-                <span>{{ it?.collection }}</span>
                 <span class="font-bold mt-1">{{ it?.name }}</span>
                 <div class="flex">
                   <div class="i-mdi-star text-xl text-yellow" />
