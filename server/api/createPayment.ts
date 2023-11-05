@@ -20,8 +20,8 @@ const createPayment = async (email: string, allitems: number[]) => {
     },
   });
 
-  const allItems = cartItemsAll?.data.map((item) => {
-    return item[0];
+  const allItems: any = cartItemsAll?.products.map((item) => {
+    return item;
   });
 
   const items = [];

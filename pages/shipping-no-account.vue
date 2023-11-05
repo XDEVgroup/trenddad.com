@@ -17,8 +17,8 @@ const { data: cartItemsAll } = await useAsyncData("getProducts", () =>
   })
 );
 
-const allPrices = cartItemsAll.value?.data.map((item) => {
-  return item[0].price;
+const allPrices: any = cartItemsAll?.value?.products?.map((item) => {
+  return Number(item.price);
 });
 
 total.value = allPrices?.reduce((a: number, b: number) => a + b, 0);
