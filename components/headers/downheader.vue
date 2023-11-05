@@ -4,11 +4,11 @@
   <div
     class="h-10 flex bg-white md:w-4/6 w-full mx-auto justify-between items-center text-black mb-1"
   >
-    <nav class="flex items-center md:space-x-4 ml-1">
+    <nav class="flex items-center md:space-x-4 pl-4">
       <li>
         <NuxtLink href="/"
           ><button
-            class="bg-white border-none text-black md:text-md lg:text-xl text-sm hover:text-gray-600 cursor-pointer"
+            class="bg-white border-none underline text-black md:text-md lg:text-xl text-sm hover:text-gray-600 cursor-pointer"
           >
             Stash
           </button></NuxtLink
@@ -17,7 +17,7 @@
       <li>
         <NuxtLink href="/trending"
           ><button
-            class="bg-white border-none text-black md:text-md lg:text-xl text-sm hover:text-gray-600 cursor-pointer"
+            class="bg-white border-none underline text-black md:text-md lg:text-xl text-sm hover:text-gray-600 cursor-pointer"
           >
             Trending
           </button></NuxtLink

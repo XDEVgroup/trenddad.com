@@ -51,23 +51,29 @@ const products = data.value?.data;
             <h1
               class="text-black md:text-5xl text-sm text-purple-300 border border-groove p-4 border-gray-300 font-bold drop-shadow-xl shadow-black font-400 font-satoshi"
             >
-              The number #1 stash store
+              The number
+              <span class="md:text-6xl text-xl text-sky-500">#1</span> stash
+              store
             </h1>
-            <div class="flex flex-col items-center">
+            <div class="flex m-2 flex-col items-center">
               <nuxt-img src="/gold.webp" alt="gold" :height="43" :width="30" />
-              <span class="text-xs font-bold">2023</span>
+              <span class="text-xs font-semibold">2023</span>
             </div>
           </div>
-          <span class="text-xs md:text-xl text-black p-1.5"
-            >Hide <span class="text-yellow-400 font-bold">valuable</span> items
-            inside our products and be safe.</span
-          >
+          <div class="text-xs font-bold w-5/6 md:text-2xl text-black p-1.5">
+            Stack
+            <span class="text-sky-400 md:text-3xl text-xl font-bold"
+              >valuable</span
+            >
+            items inside our products and be safe for intruders, festival guards
+            or (unwanted) guests.
+          </div>
         </div>
         <div>
           <NuxtLink
             to="/#products"
-            class="border hidden md:flex border-groove border-purple-500 transition hover:bg-purple-500 py-1 px-2 md:text-xl text-xs no-underline bg-purple-400 cursor-pointer decoration-none text-white"
-            >Shop now</NuxtLink
+            class="border hidden w-25 text-center md:flex xl:flex-shrink-0 border-groove border-purple-500 transition hover:bg-purple-500 py-1 px-2 md:text-xl text-xs no-underline bg-purple-400 cursor-pointer decoration-none text-white"
+            >Shop-now</NuxtLink
           >
         </div>
       </div>
