@@ -13,6 +13,7 @@ export default defineNuxtConfig({
   },
   routeRules: {
     "/": {isr: true},
+    "/trending": {isr: true},
    "/cart": {ssr: false},
    "/shipping": {ssr: false}
   },
