@@ -45,7 +45,7 @@ const products = data.value?.data;
     </div>
     <div class="flex flex-col px-2 md:px-40 py-6">
       <div class="flex items-end md:gap-0 gap-10 justify-between">
-        <div class="w-40"></div>
+        <div class="md:w-40 w-0"></div>
         <div>
           <div class="flex">
             <h1
