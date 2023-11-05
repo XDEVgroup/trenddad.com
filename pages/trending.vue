@@ -1,12 +1,11 @@
 <script lang="ts" setup>
 import { useCartStore } from "../stores/cart-store";
-const store = useCartStore();
 
 definePageMeta({
   layout: "default",
 });
 
-const { data, error, refresh } = await useAsyncData("getProducts", () =>
+const { data } = await useAsyncData("getProducts", () =>
   $fetch("/api/getProducts", {
     method: "POST",
     body: {

@@ -12,6 +12,7 @@ export default defineNuxtConfig({
     id: 'G-DVE33Y4MZD'
   },
   routeRules: {
+    "/": {isr: true},
    "/cart": {ssr: false},
    "/shipping": {ssr: false}
   },
