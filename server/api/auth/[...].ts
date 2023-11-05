@@ -12,11 +12,6 @@ export default NuxtAuthHandler({
   },
   providers: [
     // @ts-expect-error You need to use .default here for it to work during SSR. May be fixed via Vite at some point
-    GoogleProvider.default({
-      clientId: process.env.GOOGLE_ID,
-      clientSecret: process.env.GOOGLE_SECRET,
-    }),
-    // @ts-expect-error You need to use .default here for it to work during SSR. May be fixed via Vite at some point
     CredentialsProvider.default({
       async authorize(credentials: any, req: any) {
         const { email, password } = credentials as {
