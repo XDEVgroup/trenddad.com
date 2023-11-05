@@ -2,8 +2,6 @@
 import dayjs from "dayjs";
 const route = useRoute();
 
-console.log(route.params);
-
 const blogs = await $fetch("/api/getBlogs", {
   method: "POST",
   body: { title: route.params.title },

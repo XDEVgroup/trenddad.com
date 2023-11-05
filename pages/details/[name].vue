@@ -23,7 +23,7 @@ const { data, refresh } = useAsyncData("getproduct", async () => {
 
 const handleAddToCart = (id: number) => {
   store.addToCart(id);
-  const input = document.getElementById("first_name");
+  const input = document.getElementById("addToCart");
   setTimeout(() => {
     input?.blur();
   }, 1500);
@@ -121,7 +121,7 @@ const chosenImage = ref(
             </div>
             <div>
               <button
-                id="first_name"
+                id="addToCart"
                 @click="handleAddToCart(data?.data?.id as number)"
                 class="focus:animate-fade-in bg-black no-underline py-4 text-white disabled:bg-gray-300 disabled:text-gray-400 py-2 px-4 border-none mt-4 cursor-pointer disabled:cursor-default hover:bg-gray-900"
               >

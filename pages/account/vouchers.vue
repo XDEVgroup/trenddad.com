@@ -27,7 +27,6 @@ const checkVoucher = async () => {
     isLoading.value = true;
     voucherInput.value = "";
   } catch (error) {
-    console.log(error);
     isCorrectVoucher.value = "incorrect";
     isLoading.value = true;
     voucherInput.value = "";
