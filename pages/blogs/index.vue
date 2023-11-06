@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import dayjs from "dayjs";
-const blogs = await $fetch("/api/getBlogs", {
+const blogs = await $fetch(`/api/getBlogs?title=index`, {
   method: "POST",
   body: { title: "" },
 });
