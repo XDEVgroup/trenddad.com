@@ -7,9 +7,16 @@ const fetchProduct = async (id: number) => {
   return product[0];
 };
 
-export default defineEventHandler(async (event) => {
-  const { id } = await readBody(event);
+export default cachedEventHandler(async (event) => {
+  const query = getQuery(event)
+  const id: any = query.id?.toString()
   const product = await fetchProduct(id);
 
   return { data: product };
+}, {
+  swr: true, maxAge: 99999999, getKey(event) {
+     const query = getQuery(event)
+     const id: any = query.id?.toString()
+      return id.toString() 
+  },
 });

@@ -15,10 +15,7 @@ useHead({
 const store = useCartStore();
 
 const { data, refresh } = useAsyncData("getproduct", async () => {
-  return await $fetch("/api/getProduct", {
-    method: "POST",
-    body: { id: query.id },
-  });
+  return await $fetch(`/api/getProduct?id=${query.id}`);
 });
 
 const handleAddToCart = (id: number) => {
