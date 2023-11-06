@@ -1,9 +1,6 @@
 <script setup lang="ts">
 import dayjs from "dayjs";
-const blogs = await $fetch(`/api/getBlogs?title=index`, {
-  method: "GET",
-  body: { title: "" },
-});
+const blogs = await $fetch(`/api/getBlogs?title=index`);
 
 const { data, error, refresh } = await useAsyncData("getProducts", () =>
   $fetch("/api/getProducts", {
