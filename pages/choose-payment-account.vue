@@ -6,7 +6,7 @@ const cartItems: Ref<number[]> = ref([]);
 cartItems.value.push(...store.cart);
 
 if (cartItems.value.length === 0) {
-  navigateTo("/");
+  navigateTo("/home");
 }
 const isLoading = ref(false);
 

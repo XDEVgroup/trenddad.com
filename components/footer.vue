@@ -50,7 +50,9 @@
       <span
         class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"
         >© 2023
-        <NuxtLink href="/" class="hover:underline decoration-none text-black"
+        <NuxtLink
+          href="/home"
+          class="hover:underline decoration-none text-black"
           >TREND DAD</NuxtLink
         >. All Rights Reserved.</span
       >

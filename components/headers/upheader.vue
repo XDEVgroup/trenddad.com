@@ -80,7 +80,7 @@ const sendReference = async () => {
     ><span>!</span>
   </div>
   <NuxtLink
-    href="/"
+    href="/home"
     class="absolute flex gap-1 items-center top-10 md:top-8 md:left-8 lg:left-16 lef-2 decoration-none ml-4"
     ><nuxt-img
       :height="200"

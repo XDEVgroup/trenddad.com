@@ -61,7 +61,7 @@ const sendReference = async () => {
     <div
       class="relative py-10 z-50 px-10 bg-white border border-groove border-gray-300"
     >
-      <NuxtLink href="/" class="flex gap-1 items-center decoration-none"
+      <NuxtLink href="/home" class="flex gap-1 items-center decoration-none"
         ><nuxt-img :height="100" class="h-4 w-auto" src="/trend.png" alt="" />
         <nuxt-img
           :height="100"

@@ -26,7 +26,7 @@ total.value = allPrices?.reduce((a: number, b: number) => a + b, 0);
 totalToPay.value = total.value + totalShippingCosts.value;
 
 if (cartItems.value.length === 0) {
-  navigateTo("/");
+  navigateTo("/home");
 }
 
 const createPaymentGeneratedContent = async () => {

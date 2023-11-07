@@ -7,7 +7,7 @@ cartItems.value.push(...store.cart);
 onMounted(() => {
   store.cart = [];
   setTimeout(() => {
-    navigateTo("/");
+    navigateTo("/home");
   }, 4000);
 });
 

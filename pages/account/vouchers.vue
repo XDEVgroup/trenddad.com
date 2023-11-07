@@ -44,7 +44,7 @@ const { data: userData } = await useAsyncData("getUser", () =>
   })
 );
 if (!user?.email) {
-  navigateTo("/");
+  navigateTo("/home");
 }
 </script>
 

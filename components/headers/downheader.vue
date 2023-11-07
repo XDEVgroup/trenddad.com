@@ -6,7 +6,7 @@
   >
     <nav class="flex items-center md:space-x-4 pl-4">
       <li>
-        <NuxtLink href="/"
+        <NuxtLink href="/home"
           ><button
             class="bg-white border-none underline text-black md:text-md lg:text-xl text-sm hover:text-gray-600 cursor-pointer"
           >

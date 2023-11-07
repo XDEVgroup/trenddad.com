@@ -54,7 +54,7 @@ const createUser = async () => {
     })
   );
   isLoading.value = false;
-  await navigateTo("/");
+  await navigateTo("/home");
 };
 
 if (!user?.email) {
