@@ -20,7 +20,6 @@ export default cachedEventHandler(async (event) => {
     swr: true, maxAge: 99999999, getKey(event) {
        const query = getQuery(event)
        const title: any = query.title?.toString()
-       console.log(title)
         return title.toString() 
     },
   })
