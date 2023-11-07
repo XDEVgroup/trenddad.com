@@ -2,7 +2,6 @@
 export default defineNuxtConfig({
   modules: [
     "@unocss/nuxt",
-    "@sidebase/nuxt-auth",
     "@pinia/nuxt",
     "@nuxt/image",
     'nuxt-gtag',
@@ -23,9 +22,6 @@ export default defineNuxtConfig({
           ttq.page();
         }(window, document, 'ttq');`,
         type: 'text/javascript'}]
-      
-
-
     }
   },
   routeRules: {
@@ -36,9 +32,5 @@ export default defineNuxtConfig({
   components: {
     dirs: ["~/components"],
     global: true,
-  },
-  auth: {
-    isEnabled: true,
-    baseURL: "/api/auth",
-  },
+  }
 });

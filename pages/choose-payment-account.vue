@@ -34,7 +34,7 @@ const choosePaymentAccountOption = () => {
       >Please select how you want to proceed</span
     >
     <div class="md:w-3/12 w-5/6 mt-20 flex flex-col">
-      <select v-model="isAccount">
+      <select class="py-1.5 px-1" v-model="isAccount">
         <option :value="false">Continue without account (Only option)</option>
       </select>
       <button

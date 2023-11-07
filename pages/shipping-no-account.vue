@@ -46,7 +46,7 @@ const isLoading = ref(false);
 const nameInput = ref("");
 const emailInput = ref("");
 const zipcodeInput = ref("");
-const countryInput = ref("");
+const countryInput = ref("Albania");
 const numberInput = ref("");
 const streetInput = ref("");
 const cityInput = ref("");
@@ -86,7 +86,7 @@ useHead({
     @submit.prevent="createUser"
     class="w-screen min-h-screen flex flex-col items-center justify-center"
   >
-    <h1>Shipping - Account</h1>
+    <h1>Shipping - Information</h1>
     <span class="text-gray-600 px-6"
       >Please check your credentials carefully before you continue.</span
     >

@@ -101,7 +101,7 @@ useHead({
         </div>
       </div>
       <div
-        class="md:w-5/12 w-11/12 border h-80 border-groove border-1 border-gray-200"
+        class="md:w-5/12 mt-4 mb-4 w-11/12 border h-80 border-groove border-1 border-gray-200"
       >
         <div class="p-4 flex flex-col gap-1">
           <span class="font-bold">Overview</span>
