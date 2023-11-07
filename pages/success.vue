@@ -27,7 +27,6 @@ useHead({
   ttq.load('CL54V43C77UCAD77M3S0');
   ttq.page();
 }(window, document, 'ttq');
-</script>"})
 </script>`]
 });
 </script>
