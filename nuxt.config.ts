@@ -12,6 +12,7 @@ export default defineNuxtConfig({
     id: 'G-DVE33Y4MZD'
   },
   routeRules: {
+    "/": {redirect: "/home"},
    "/cart": {ssr: false, cache: false},
    "/shipping": {ssr: false, cache: false},
   },
