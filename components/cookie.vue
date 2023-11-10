@@ -54,14 +54,14 @@ const declineCookies = () => {
         <button
           @click="acceptCookies"
           type="button"
-          class="py-[.4125rem] text-black px-3 inline-flex justify-center items-center gap-2 rounded-full border-2 border-white font-semibold text-white hover:text-gray-800 hover:bg-white hover:border-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 transition-all text-sm"
+          class="py-[.4125rem] text-black px-3 inline-flex justify-center items-center gap-2 rounded-full border-2 font-semibold text-white hover:text-gray-800 hover:bg-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 transition-all text-sm"
         >
           Accept all
         </button>
         <button
           @click="declineCookies"
           type="button"
-          class="py-[.4125rem] text-black px-3 inline-flex justify-center items-center gap-2 rounded-full border-2 border-white font-semibold text-white hover:text-gray-800 hover:bg-white hover:border-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 transition-all text-sm"
+          class="py-[.4125rem] text-black px-3 inline-flex justify-center items-center gap-2 rounded-full border-2 font-semibold text-white hover:text-gray-800 hover:bg-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 transition-all text-sm"
         >
           Reject all
         </button>

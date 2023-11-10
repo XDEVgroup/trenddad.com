@@ -96,5 +96,11 @@ const products = data.value?.data;
         </div>
       </div>
     </div>
+    <div id="reviews" class="pt-20">
+     <div class="md:w-3/6 w-scree p-6">
+      <h2 class="font-inter text-4xl">Buyer reviews</h2>
+      
+      <ProductReviews /></div>
+    </div>
   </div>
 </template>

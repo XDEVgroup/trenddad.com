@@ -1,10 +1,7 @@
 <script lang="ts" setup>
-interface Props {
-  productId: number;
-}
-const props = defineProps<Props>();
 const review = ref("");
-const { data } = useFetch(`/api/get-review?productid=${props.productId}`);
+const { data } = useFetch(`/api/get-reviews`);
+
 </script>
 <template>
   <div class="flex flex-col gap-2">
@@ -24,18 +21,6 @@ const { data } = useFetch(`/api/get-review?productid=${props.productId}`);
       <span>{{ review?.review }}</span>
     </div>
 
-    <div>
-      <textarea
-        :disabled="true"
-        v-model="review"
-        class="w-full h-20 bg-gray-100 border-gray-300 rounded-xl py-2 cursor-not-allowed"
-      ></textarea>
-      <button
-        :disabled="true"
-        class="bg-black text-white disabled:bg-gray-300 disabled:text-gray-400 py-2 px-4 border-none mt-4 cursor-not-allowed hover:bg-gray-900"
-      >
-        Sign in
-      </button>
-    </div>
+    
   </div>
 </template>

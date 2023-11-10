@@ -3,15 +3,14 @@ import { reviews } from './../../drizzle/schema';
 import db from "~/drizzle/db"
 
 export default defineEventHandler(async(event) => {
-    const {productid} = getQuery(event)
 
-    const response = await getReview(productid as number)
+    const response = await getReview()
 
     return response
 })
 
-const getReview = async (productid: number) => {
-const response = await db.select().from(reviews).where(eq(reviews.productid, productid))
+const getReview = async () => {
+const response = await db.select().from(reviews).limit(20)
 
 return response
 }
