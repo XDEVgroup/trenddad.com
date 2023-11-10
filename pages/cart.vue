@@ -3,7 +3,7 @@ import { useCartStore } from "../stores/cart-store";
 
 const store = useCartStore();
 
-const cartItems: Ref<number[]> = ref([]);
+const cartItems = ref();
 
 const total = ref<number | undefined>(500);
 

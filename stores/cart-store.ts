@@ -1,18 +1,23 @@
 import { defineStore } from "pinia";
 import { useLocalStorage } from "@vueuse/core";
 
+interface Store{
+  randomId?: string,
+  id?: number
+}
+
 export const useCartStore = defineStore("cart-store", {
   state: () => ({
     cart: useLocalStorage(
       "pinia-store-cartItems-cart",
-      []
-    ) as unknown as any[],
+      [] as Store[]
+    ) ,
   }),
   hydrate: (state) => {
     state.cart = useLocalStorage(
       "pinia-store-cartItems-cart",
       []
-    ) as unknown as any[];
+    ) as unknown as Store[]
   },
   getters: {
     getCart: (state) => state.cart,
