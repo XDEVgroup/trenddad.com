@@ -28,8 +28,7 @@ useHead({
 
 <template>
   <div v-if="products">
-    <div class="relative h-80 bg-sky-700 flex items-center justify-center">
-      <div>Banner foto</div>
+    <div class="relative h-80  flex items-center justify-center">
 
       <nuxt-img
         :height="500"
