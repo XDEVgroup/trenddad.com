@@ -15,8 +15,8 @@ export default cachedEventHandler(async (event) => {
   return { data: product };
 }, {
   swr: true, maxAge: 99999999, getKey(event) {
-     const query = getQuery(event)
-     const id: any = query.id?.toString()
-      return id.toString() 
+    const query = getQuery(event)
+    const id: any = query.id?.toString()
+    return id.toString()
   },
 });

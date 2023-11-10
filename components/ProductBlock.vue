@@ -15,7 +15,7 @@ defineProps<Props>();
   <div class="flex flex-col">
     <NuxtLink
       class="text-black decoration-none no-underline"
-      :to="`/details/${name}?id=${id}`"
+      :to="`/products/${name}?id=${id}`"
     >
       <nuxt-img
         :height="400"

@@ -5,14 +5,14 @@ const stripe = new Stripe(process.env.STRIPE_TEST_KEY!, {
 });
 
 export default defineEventHandler(async (event) => {
- 
+
   const { email, allitems } = await readBody(event);
   const response = await createPayment(email, allitems);
   return { data: response };
 });
 
 const createPayment = async (email: string, allitems: number[]) => {
- 
+
   const cartItemsAll = await $fetch("/api/getCartItems", {
     method: "POST",
     body: {
