@@ -13,7 +13,6 @@
   "devDependencies": {
     "@iconify/json": "^2.2.98",
     "@nuxt/image": "1.0.0-rc.1",
-    "@sidebase/nuxt-auth": "0.6.0-beta.3",
     "@types/node": "^18.17.3",
     "@types/pg": "^8.10.2",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
@@ -41,7 +40,6 @@
     "@types/bcrypt": "^5.0.0",
     "@types/nodemailer": "^6.4.9",
     "@vueuse/core": "^10.3.0",
-    "bcrypt": "^5.1.0",
     "dayjs": "^1.11.9",
     "drizzle-orm": "^0.27.2",
     "drizzle-zod": "^0.4.4",

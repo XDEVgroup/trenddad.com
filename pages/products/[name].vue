@@ -2,7 +2,7 @@
 import { useCartStore } from "@/stores/cart-store";
 
 const { params, query } = useRoute();
-
+const isOpenToast = ref(false)
 useHead({
   title: `Trend Dad, ${params.name}`,
   meta: [
@@ -20,10 +20,19 @@ const { data, refresh } = useAsyncData("getproduct", async () => {
 
 const handleAddToCart = (id: number) => {
   store.addToCart(id);
+  // @ts-ignore
   const input = document.getElementById("addToCart");
+  isOpenToast.value = true
+
   setTimeout(() => {
     input?.blur();
-  }, 1500);
+ 
+
+  }, 1000);
+
+  setTimeout(() => {
+    isOpenToast.value = false
+  },6000)
 };
 
 await refresh();
@@ -34,6 +43,10 @@ const chosenImage = ref(
 </script>
 
 <template>
+  <div class="h-12 w-11/12 md:w-80 p-5 animate-bounce-in-left mx-auto bg-black border-groove text-white text-xl z-40 border-1 fixed bottom-6 md:right-6 flex"
+   v-if="isOpenToast">
+    <span class="font-bold">Product succesfully added to the cart.</span>
+  </div>
   <div class="relative h-20 mt-20 mb-10 flex items-center justify-center"></div>
   <div class="w-screen flex justify-center items-center min-h-screen">
     <div

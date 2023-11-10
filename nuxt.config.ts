@@ -5,11 +5,13 @@ export default defineNuxtConfig({
     "@pinia/nuxt",
     "@nuxt/image",
     'nuxt-gtag',
+  
   ],
   // @ts-ignore
   gtag: {
     id: 'G-DVE33Y4MZD'
   },
+ 
   app: {
     head: {
       title: "tiktok",
