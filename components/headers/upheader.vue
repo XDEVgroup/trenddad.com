@@ -130,7 +130,7 @@ const sendReference = async () => {
         ><div class="i-mdi-shopping-outline text-2xl text-black" />
         <div class="group hover:text-gray-600">
           <span
-            class="bg-sky-900 group-hover:bg-sky-800 text-white rounded-full px-2 py-1"
+          class="bg-slate-900 text-xs  text-white rounded-full p-1"
             >{{ store.getCart.length }}</span
           >
         </div></NuxtLink
