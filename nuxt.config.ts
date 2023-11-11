@@ -28,6 +28,8 @@ export default defineNuxtConfig({
   },
   routeRules: {
     "/": {redirect: "/home"},
+    "/home": {isr: true},
+    "/trending": {isr: true},
    "/cart": {ssr: false, cache: false},
    "/shipping": {ssr: false, cache: false},
   },
