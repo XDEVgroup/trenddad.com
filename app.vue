@@ -6,7 +6,6 @@ import { Analytics } from '@vercel/analytics/react';
   <div>
     <NuxtLayout>
       <NuxtPage />
-      <Analytics />
     </NuxtLayout>
   </div>
 </template>
