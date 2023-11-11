@@ -72,7 +72,7 @@ const sendReference = async () => {
     </div>
   </div>
   <div
-    class="absolute z-20 gap-1 flex top-0 h-6 w-screen items-center justify-center bg-purple-400 text-xs text-white"
+    class="absolute z-20 gap-1 flex top-0 h-6 w-screen items-center justify-center bg-slate-900 text-xs text-white"
   >
     <span>Get a chance to receive 10% discount</span
     ><span class="underline cursor-pointer" @click="openPopup = true"
@@ -119,7 +119,7 @@ const sendReference = async () => {
             ><div class="i-mdi-shopping-outline text-2xl text-black" />
             <div class="group hover:text-gray-600">
               <span
-                class="bg-sky-900 group-hover:bg-sky-800 text-white rounded-full px-2 py-1"
+                class="bg-slate-900 text-xs  text-white rounded-full p-1"
                 >{{ store.getCart.length }}</span
               >
             </div></NuxtLink
