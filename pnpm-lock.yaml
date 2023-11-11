@@ -13,6 +13,7 @@ specifiers:
   '@typescript-eslint/eslint-plugin': ^5.62.0
   '@typescript-eslint/parser': ^5.62.0
   '@unocss/nuxt': ^0.52.7
+  '@vercel/analytics': ^1.1.1
   '@vueuse/core': ^10.3.0
   dayjs: ^1.11.9
   drizzle-kit: ^0.19.12
@@ -47,6 +48,7 @@ dependencies:
   '@pinia/nuxt': 0.4.11_typescript@5.2.2+vue@3.3.4
   '@types/bcrypt': 5.0.0
   '@types/nodemailer': 6.4.9
+  '@vercel/analytics': 1.1.1
   '@vueuse/core': 10.3.0_vue@3.3.4
   dayjs: 1.11.9
   drizzle-orm: 0.27.2_yhwexgo3a6uixuuk73jgihroue
@@ -2029,6 +2031,12 @@ packages:
     transitivePeerDependencies:
       - rollup
     dev: true
+
+  /@vercel/analytics/1.1.1:
+    resolution: {integrity: sha512-+NqgNmSabg3IFfxYhrWCfB/H+RCUOCR5ExRudNG2+pcRehq628DJB5e1u1xqwpLtn4pAYii4D98w7kofORAGQA==}
+    dependencies:
+      server-only: 0.0.1
+    dev: false
 
   /@vercel/nft/0.22.6:
     resolution: {integrity: sha512-gTsFnnT4mGxodr4AUlW3/urY+8JKKB452LwF3m477RFUJTAaDmcz2JqFuInzvdybYIeyIv1sSONEJxsxnbQ5JQ==}
@@ -6624,6 +6632,10 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /server-only/0.0.1:
+    resolution: {integrity: sha512-qepMx2JxAa5jjfzxG79yPPq+8BuFToHd1hm7kI+Z4zAq1ftQiP7HcxMhDDItrbtwVeLg/cY2JnKnrcFkmiswNA==}
+    dev: false
 
   /set-blocking/2.0.0:
     resolution: {integrity: sha512-KiKBS8AnWGEyLzofFfmvKwpdPzqiy16LvQfK3yv/fVH7Bj13/wl3JSR1J+rfgRE9q7xUJK4qvgS8raSOeLUehw==}
