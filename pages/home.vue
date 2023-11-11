@@ -70,7 +70,7 @@ const products = data.value?.data;
         </div>
         <div>
           <NuxtLink
-            to="/#products"
+            to="/home#products"
             class="border hidden w-25 text-center md:flex xl:flex-shrink-0 border-groove border-black transition hover:bg-black py-1 px-2 md:text-xl text-xs no-underline bg-slate-900 cursor-pointer decoration-none text-white"
             >Shop-now</NuxtLink
           >
