@@ -20,6 +20,7 @@ const getProducts = debounce( async (value: string) => {
   isOpen.value = true
   products.value = response
 }, 500); 
+
 </script>
 
 <template>

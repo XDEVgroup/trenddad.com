@@ -1,17 +1,12 @@
 <script lang="ts" setup>
+import Products from './../components/products.vue';
+
+
 definePageMeta({
   layout: "default",
 });
 const hoverImage = ref(false);
-const { data, error, refresh } = await useAsyncData("getProducts", () =>
-  $fetch("/api/getProducts", {
-    method: "POST",
-    body: {
-      cartItems: [],
-    },
-  })
-);
-const products = data.value?.data;
+
 </script>
 <template>
   <div>
@@ -77,25 +72,7 @@ const products = data.value?.data;
         </div>
       </div>
     </div>
-    <div id="products" class="flex flex-col items-center md:mt-6 mt-0 px-4">
-      <div
-        class="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6"
-      >
-        <div
-          class="flex relative justify-center w-80"
-          :key="i"
-          v-for="(item, i) in products"
-        >
-          <product-block
-            :name="(item.name as string)"
-            :image="(item.image as string)"
-            :id="item.id"
-            :price="Number(item.price)"
-            :descriptionTitle="(item.descriptiontitle as string)"
-          />
-        </div>
-      </div>
-    </div>
+   <Products/>
     <div id="reviews" class="pt-20">
      <div class="md:w-3/6 w-scree p-6">
       <h2 class="font-inter text-4xl">Buyer reviews</h2>

@@ -12,7 +12,7 @@ const fetchProducts = async () => {
 export default cachedEventHandler(async () => {
   const product = await fetchProducts();
 
-  return { data: product };
+  return product
 }, {
   swr: true, maxAge: 99999999
 });

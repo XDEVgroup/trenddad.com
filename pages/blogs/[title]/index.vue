@@ -1,18 +1,10 @@
 <script setup lang="ts">
+import Products from './../../../components/products.vue';
 import dayjs from "dayjs";
-const route = useRoute();
 
+const route = useRoute();
 const blogs = await $fetch(`/api/getBlogs?title=${route.params.title}`);
 
-const { data, error, refresh } = await useAsyncData("getProducts", () =>
-  $fetch("/api/getProducts", {
-    method: "POST",
-    body: {
-      cartItems: [],
-    },
-  })
-);
-const products = data.value?.data;
 
 useHead({
   title: `${blogs.blog.title} `,
@@ -215,23 +207,5 @@ useHead({
       </div>
     </div>
   </div>
-  <div id="products" class="flex flex-col items-center md:mt-6 mt-0 px-4">
-    <div
-      class="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6"
-    >
-      <div
-        class="flex relative justify-center w-80"
-        :key="i"
-        v-for="(item, i) in products"
-      >
-        <product-block
-          :name="(item.name as string)"
-          :image="(item.image as string)"
-          :id="item.id"
-          :price="Number(item.price)"
-          :descriptionTitle="(item.descriptiontitle as string)"
-        />
-      </div>
-    </div>
-  </div>
+  <Products />
 </template>

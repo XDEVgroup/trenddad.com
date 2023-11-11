@@ -12,7 +12,7 @@ const totalShippingCosts = ref(4.5);
 const totalToPay = ref(0);
 cartItems.value = store.cart;
 
-const { data, refresh } = await useAsyncData("getProducts", () =>
+const { data, refresh } = await useAsyncData("getCartItems", () =>
   $fetch("/api/getCartItems", {
     method: "POST",
     body: {

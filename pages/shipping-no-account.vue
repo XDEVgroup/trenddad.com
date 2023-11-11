@@ -6,9 +6,10 @@ const total = ref(500);
 const totalShippingCosts = ref(0);
 const totalToPay = ref(0);
 
+//@ts-ignore
 cartItems.value.push(...store.cart);
 
-const { data: cartItemsAll } = await useAsyncData("getProducts", () =>
+const { data: cartItemsAll } = await useAsyncData("getCartItems", () =>
   $fetch("/api/getCartItems", {
     method: "POST",
     body: {
