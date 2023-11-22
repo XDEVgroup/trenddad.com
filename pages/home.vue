@@ -80,5 +80,8 @@ const hoverImage = ref(false);
       
       <ProductReviews /></div>
     </div>
+    <div class="bg-sky-900 h-20 flex items-center justify-center">
+      <span class="md:text-3xl text-md text-white font-satoshi">Order now on trenddad.com, and be in safe heaven ;D</span>
+    </div>
   </div>
 </template>
