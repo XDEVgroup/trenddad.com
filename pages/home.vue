@@ -11,6 +11,7 @@ const hoverImage = ref(false);
 <template>
   <div>
     <div
+    @mouseleave="hoverImage = true"
       @mouseover="hoverImage = true"
       class="relative lg:h-40 h-40 w-screen bg-sky-900 flex items-center justify-center"
     >
@@ -37,7 +38,7 @@ const hoverImage = ref(false);
         class="absolute lg:h-40 h-40 z-10 w-full bg-gradient-to-t from-white/30 opacity-100 to-transparent"
       ></div>
     </div>
-    <div class="flex bg-sky-900 flex-col px-2 md:px-40 py-6">
+    <div  @mouseover="hoverImage = true" class="flex bg-sky-900 flex-col px-2 md:px-40 py-6">
       <div class="flex items-end md:gap-0 gap-10 justify-between">
         <div class="md:w-40 w-0"></div>
         <div>
