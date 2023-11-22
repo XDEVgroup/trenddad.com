@@ -4,10 +4,7 @@ Disallow: /privacy-policy
 Disallow: /help
 Disallow: /cancel
 Disallow: /success
-Disallow: /account
-Disallow: /account/*
 Disallow: /orders
 Disallow: /cart
-Disallow: /forgot-password
 
 Sitemap: https://www.trenddad.com/sitemap.xml
