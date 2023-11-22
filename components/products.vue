@@ -5,7 +5,7 @@ const { data } = await useFetch("/api/getProducts")
 </script>
 
 <template>
-     <div v-if="data" id="products" class="flex flex-col items-center md:mt-6 mt-0 px-4">
+     <div v-if="data" id="products" class="flex flex-col items-center py-8 mt-0 px-4">
       <div
         class="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-2 gap-6"
       >
