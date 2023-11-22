@@ -56,7 +56,7 @@ const createPayment = async (email: string, allitems: number[]) => {
             },
             maximum: {
               unit: "business_day",
-              value: 5,
+              value: 4,
             },
           },
         },
