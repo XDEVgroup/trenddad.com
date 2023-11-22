@@ -12,7 +12,7 @@ const hoverImage = ref(false);
   <div>
     <div
       @mouseover="hoverImage = true"
-      class="relative lg:h-40 h-40 w-screen bg-black flex items-center justify-center"
+      class="relative lg:h-40 h-40 w-screen bg-sky-900 flex items-center justify-center"
     >
       <nuxt-img
         v-if="!hoverImage"
@@ -37,24 +37,24 @@ const hoverImage = ref(false);
         class="absolute lg:h-40 h-40 z-10 w-full bg-gradient-to-t from-white/30 opacity-100 to-transparent"
       ></div>
     </div>
-    <div class="flex flex-col px-2 md:px-40 py-6">
+    <div class="flex bg-sky-900 flex-col px-2 md:px-40 py-6">
       <div class="flex items-end md:gap-0 gap-10 justify-between">
         <div class="md:w-40 w-0"></div>
         <div>
           <div class="flex">
             <h1
-              class="text-black md:text-5xl text-sm text-black border border-groove p-4 border-gray-300 font-bold drop-shadow-xl shadow-black font-400 font-satoshi"
+              class=" md:text-5xl text-sm text-white border border-groove p-4 border-gray-300 font-bold drop-shadow-xl shadow-black font-400 font-satoshi"
             >
               The number
-              <span class="md:text-6xl text-xl text-slate-900">#1</span> stash
+              <span class="md:text-6xl text-xl text-yellow">#1</span> stash
               store
             </h1>
             <div class="flex m-2 flex-col items-center">
-              <nuxt-img src="/gold.webp" alt="gold" :height="43" :width="30" />
-              <span class="text-xs font-semibold">2023</span>
+              <!-- <nuxt-img src="/gold.webp" alt="gold" :height="43" :width="30" /> -->
+              <span class="text-xl text-white font-semibold">2023</span>
             </div>
           </div>
-          <div class="text-xs font-bold w-5/6 md:text-2xl text-black p-1.5">
+          <div class="text-xs font-bold w-5/6 md:text-2xl text-white p-1.5">
             Stack
             <span class=" md:text-3xl text-xl font-bold"
               >valuable</span
