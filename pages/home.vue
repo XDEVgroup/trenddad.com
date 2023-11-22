@@ -43,7 +43,7 @@ const hoverImage = ref(false);
         <div>
           <div class="flex">
             <h1
-              class="text-black md:text-5xl text-sm text-slate-400 border border-groove p-4 border-gray-300 font-bold drop-shadow-xl shadow-black font-400 font-satoshi"
+              class="text-black md:text-5xl text-sm text-black border border-groove p-4 border-gray-300 font-bold drop-shadow-xl shadow-black font-400 font-satoshi"
             >
               The number
               <span class="md:text-6xl text-xl text-slate-900">#1</span> stash

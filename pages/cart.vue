@@ -26,6 +26,7 @@ const allPrices = data.value?.products.map((item) => {
 total.value = allPrices?.reduce((a: number, b: number) => a + b, 0);
 
 totalToPay.value = total.value! + totalShippingCosts.value;
+
 const removeCartItem = async (uuid: string) => {
   store.removeFromCart(uuid);
   cartItems.value = [...store.cart];
